@@ -1,6 +1,6 @@
 "use strict";
 const React = require("react");
-const { Box } = require("ink");
+const {Text, Box } = require("ink");
 const TextInput = require("ink-text-input").default;
 const wcc = require("world-countries-capitals");
 
