@@ -10,7 +10,12 @@ const App = () => {
 	const [currency, setCurrency] = React.useState("");
 	const [phone, setPhone] = React.useState("");
 
-	
+	React.useEffect(() => {
+		const getCountry = wcc.getCountryDetailsByName(country);
+		setCapital(getCountry[0].capital);
+		setCurrency(getCountry[0].currency);
+		setPhone(getCountry[0].phone_code);
+	  });
 
 	return (
 		<Box>
