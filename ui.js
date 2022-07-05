@@ -15,15 +15,42 @@ const App = () => {
 		setCapital(getCountry[0].capital);
 		setCurrency(getCountry[0].currency);
 		setPhone(getCountry[0].phone_code);
-	  });
+	});
 
 	return (
-		<Box>
+		<Box flexDirection="column">
+			<Box borderStyle="round" borderColor="green">
+				<Text>Welcome to Country CLI App</Text>
+			</Box>
 			<TextInput
-				placeholder="Enter country..."
+				placeholder="Enter Country"
 				value={country}
 				onChange={setCountry}
 			/>
+			<Box flexDirection="column" width={80} borderStyle="single">
+				<Box>
+					<Box width="40%">
+						<Text>Country Code</Text>
+					</Box>
+					<Box width="40%">
+						<Text>Capital</Text>
+					</Box>
+					<Box width="40%">
+						<Text>Currency</Text>
+					</Box>
+				</Box>
+				<Box>
+					<Box width="40%">
+						<Text>{phone}</Text>
+					</Box>
+					<Box width="40%">
+						<Text>{capital}</Text>
+					</Box>
+					<Box width="40%">
+						<Text>{currency}</Text>
+					</Box>
+				</Box>
+			</Box>
 		</Box>
 	);
 };
