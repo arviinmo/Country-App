@@ -33,7 +33,7 @@ const App = () => {
 						<Text>Country Code</Text>
 					</Box>
 					<Box width="40%">
-						<Text>Capita</Text>
+						<Text>Capital</Text>
 					</Box>
 					<Box width="40%">
 						<Text>Currency</Text>
